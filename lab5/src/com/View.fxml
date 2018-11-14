@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="554.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.Controller">
+  <children>
+    <ScatterChart fx:id="scatterChart" layoutX="9.0" layoutY="76.0" prefWidth="487.0">
+      <xAxis>
+        <NumberAxis label="X" side="BOTTOM" upperBound="0.0">
+          <tickLabelFont>
+            <Font size="14.0" fx:id="x1" />
+          </tickLabelFont>
+        </NumberAxis>
+      </xAxis>
+      <yAxis>
+        <NumberAxis label="Y" side="LEFT" tickLabelFont="$x1" upperBound="0.0" />
+      </yAxis>
+    </ScatterChart>
+    <Button layoutX="445.0" layoutY="23.0" mnemonicParsing="false" onAction="#paint" prefHeight="41.0" prefWidth="67.0" text="Draw" />
+    <Label layoutX="31.0" layoutY="11.0" prefHeight="24.0" prefWidth="57.0" text="Вісь Х:">
+      <font>
+        <Font size="18.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label font="$x2" layoutX="34.0" layoutY="50.0" prefHeight="21.0" text="Вісь Y:" />
+    <HBox id="choiceBox1" cache="false" layoutX="100.0" layoutY="14.0" prefHeight="24.0" prefWidth="308.0">
+      <children>
+        <RadioButton id="choiceBox1" fx:id="radioButton11" mnemonicParsing="false" prefHeight="21.0" prefWidth="36.0" selected="true" text="1">
+          <toggleGroup>
+            <ToggleGroup fx:id="group1" />
+          </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="radioButton12" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="2" toggleGroup="$group1" />
+        <RadioButton fx:id="radioButton13" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="3" toggleGroup="$group1" />
+        <RadioButton fx:id="radioButton14" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="4" toggleGroup="$group1" />
+        <RadioButton fx:id="radioButton15" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="5" toggleGroup="$group1" />
+        <RadioButton fx:id="radioButton16" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="6" toggleGroup="$group1" />
+        <RadioButton fx:id="radioButton17" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="7" toggleGroup="$group1" />
+        <RadioButton fx:id="radioButton18" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" selected="false" text="8" toggleGroup="$group1" />
+      </children>
+    </HBox>
+    <HBox layoutX="100.0" layoutY="53.0" prefHeight="24.0" prefWidth="308.0">
+      <children>
+        <RadioButton fx:id="radioButton21" mnemonicParsing="false" prefHeight="21.0" prefWidth="36.0" selected="true" text="1" />
+        <RadioButton fx:id="radioButton22" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="2" />
+        <RadioButton fx:id="radioButton23" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="3" />
+        <RadioButton fx:id="radioButton24" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="4" />
+        <RadioButton fx:id="radioButton25" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="5" />
+        <RadioButton fx:id="radioButton26" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="6" />
+        <RadioButton fx:id="radioButton27" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="7" />
+        <RadioButton fx:id="radioButton28" mnemonicParsing="false" prefHeight="21.0" prefWidth="37.0" text="8" />
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>
